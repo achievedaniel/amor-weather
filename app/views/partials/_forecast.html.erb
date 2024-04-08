@@ -1,0 +1,19 @@
+    <div class="container  overflow-hidden">
+        <div class="row gy-5">
+            <% @daily_forecast.each do |day|%>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="shadow p-4 bg-dark rounded text-light" style="--bs-bg-opacity: .85;">
+                        <h6 class="fs-10 text-nowrap text-center forecast_heading"> <%= Time.at(day.dt).strftime('%A %-d-%-m') %> </h6>
+                        <p> <%= day.summary %> </p>
+                        <div class="d-grid gap-0">
+                            <h6 class="text-center forecast_heading">Temprature</h6>
+                            Avegare <%= day.temp.day.round %><br>
+                            Min <%= day.temp.min.round %><br>
+                            Max <%= day.temp.max.round %> </>
+                        </div>
+
+                    </div>
+                </div>
+            <% end %>
+        </div>
+    </div>

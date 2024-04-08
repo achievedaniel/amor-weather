@@ -1,0 +1,12 @@
+<nav class="navbar navbar-dark" style="background-color: #0f0b6b;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Amor Weather</a>
+      <%= form_with( url: "/forecast", method: "GET", class: "form-inline") do |form| %>
+
+            <%= form.text_field :zip, placeholder: "Zip Code", class: "rounded mx-sm-1"%>
+            <%= form.select :country, options_for_select([['US', 'US'], ['CA', 'CA']]), {}, {class: "custom-select"} %>
+            <%= form.button "Search", class: "btn btn-primary btn-sm mx-sm-1"%>
+
+      <% end %>
+  </div>
+</nav>
