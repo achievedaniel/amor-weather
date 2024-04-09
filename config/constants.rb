@@ -1,6 +1,6 @@
 class Configs
    def self.open_weather_api_key
-      ENV["OPENN_WEATER_KEY"]
+      ENV["OPEN_WEATER_KEY"]
    end
 
    def self.open_weather_forecast_url
