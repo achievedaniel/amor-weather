@@ -1,0 +1,124 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.openweathermap.org/geo/1.0/zip?appid=&zip=90210,US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Tue, 09 Apr 2024 12:59:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '108'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/geo/1.0/zip?zip=90210,us"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"cod":401, "message": "Invalid API key. Please see https://openweathermap.org/faq#error401
+        for more info."}'
+  recorded_at: Tue, 09 Apr 2024 12:59:55 GMT
+- request:
+    method: get
+    uri: http://api.openweathermap.org/geo/1.0/zip?appid=00&zip=90210,US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Tue, 09 Apr 2024 13:06:09 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '83'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/geo/1.0/zip?zip=90210,us"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"zip":"90210","name":"Beverly Hills","lat":34.0901,"lon":-118.4065,"country":"US"}'
+  recorded_at: Tue, 09 Apr 2024 13:06:09 GMT
+- request:
+    method: get
+    uri: http://api.openweathermap.org/geo/1.0/zip?appid=043fe757188f8bddf56aa5751f6ce5de&zip=90210,US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Tue, 09 Apr 2024 13:18:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '83'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/geo/1.0/zip?zip=90210,us"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"zip":"90210","name":"Beverly Hills","lat":34.0901,"lon":-118.4065,"country":"US"}'
+  recorded_at: Tue, 09 Apr 2024 13:18:02 GMT
+recorded_with: VCR 6.2.0
