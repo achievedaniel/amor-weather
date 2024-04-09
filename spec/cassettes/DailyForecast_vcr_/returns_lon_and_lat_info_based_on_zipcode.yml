@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.openweathermap.org/geo/1.0/zip?appid=043fe757188f8bddf56aa5751f6ce5de&zip=90210,US
+    uri: http://api.openweathermap.org/geo/1.0/zip?appid=00&zip=90210,US
     body:
       encoding: US-ASCII
       string: ''
