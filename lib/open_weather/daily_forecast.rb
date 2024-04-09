@@ -33,8 +33,16 @@ module OpenWeather
         all_weather(lat, lon).daily
       end
 
+      def data_from_cash?(lat, lon)
+        if Rails.cache.read("#{lat}#{lon}")
+          return true
+        else
+          return false
+        end
+      end
+
       private
-      
+
       def all_weather(lat, lon)
         Rails.cache.fetch("#{lat}#{lon}", expires_in: 30.minutes) do
           HttpService.service("#{@forecast_url}?lat=#{lat}&lon=#{lon}&units=imperial&appid=#{@api_key}")

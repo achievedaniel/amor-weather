@@ -12,6 +12,7 @@ class WeathersController < ApplicationController
     params.permit(:zip, :country)
     @zip_data = get_lat_lon(params[:zip], params[:country])
     if @zip_data.zip
+      @cash_used = @open_weather.data_from_cash?(@zip_data.lat,@zip_data.lon)
       @current_weather = @open_weather.current_weather(@zip_data.lat,@zip_data.lon)
       @daily_forecast = @open_weather.daily_forecast(@zip_data.lat,@zip_data.lon)
     else

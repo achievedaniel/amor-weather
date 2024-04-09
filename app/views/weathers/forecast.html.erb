@@ -1,4 +1,7 @@
 <%= render '/partials/nav' %>
+<% if @cash_used %>
+    <%= render '/partials/using_cashed' %>
+<% end %>    
 
 <%= render '/partials/current' %>
 
