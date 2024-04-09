@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   get "main", to: 'weathers#main'
-  # get "error", to: 'weathers#error'
   get "forecast", to: 'weathers#forecast'
   get "index", to: 'things#index'
   get "all", to: 'weathers#pre_json'
