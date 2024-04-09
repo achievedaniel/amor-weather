@@ -6,7 +6,7 @@
         <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('sun_set.jpeg');">
         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <h3 class="pt-1 mt-1 mb-1 display-4 lh-1 fw-bold"><%=@current_weather.weather[0].main%></h3>
-            <h2 class="pt-15 mt-50 mb-200 display-12 lh-1 fw-bold"> Temprature </h2>
+            <h2 class="pt-15 mt-50 mb-200 display-12 lh-1 fw-bold"> Temperature </h2>
             <h3 class="pt-20 mt-50 mb-450 display-1 lh-1 fw-bold"> <%=@current_weather.temp.to_i.round%>° </h3>
             <h2 class="pt-15 mt-50 mb-200 display-12 lh-1 fw-bold"> Feels Like </h2>
             <h2 class="pt-20 mt-50 mb-450 display-5 lh-1 fw-bold"> <%=@current_weather.feels_like.to_i.round%>° </h2>
@@ -21,11 +21,11 @@
             <h2 class="pt-15 mt-50 mb-200 display-12 lh-1 fw-bold">  </h2>
             <h3 class="pt-1 mt-1 mb-1 display-8 lh-1 fw-bold">Wind Deg: <%=@current_weather.wind_deg.to_i.round%></h3>
             <h2 class="pt-15 mt-50 mb-200 display-12 lh-1 fw-bold">  </h2>
-            <h3 class="pt-1 mt-1 mb-1 display-8 lh-1 fw-bold">Wind GUst: <%=@current_weather.wind_gust.to_i.round%></h3>
+            <h3 class="pt-1 mt-1 mb-1 display-8 lh-1 fw-bold">Wind Gust: <%=@current_weather.wind_gust.to_i.round%></h3>
             <h2 class="pt-15 mt-50 mb-200 display-12 lh-1 fw-bold"> </h2>
             <h3 class="pt-1 mt-1 mb-1 display-8 lh-1 fw-bold">Humidity: <%=@current_weather.humitity.to_i.round%></h3>
             <h2 class="pt-15 mt-50 mb-200 display-12 lh-1 fw-bold"> </h2>
-            <h3 class="pt-1 mt-1 mb-1 display-8 lh-1 fw-bold">Preasure: <%=@current_weather.preasure.to_i.round%></h3>
+            <h3 class="pt-1 mt-1 mb-1 display-8 lh-1 fw-bold">Preassure: <%=@current_weather.preasure.to_i.round%></h3>
             <h2 class="pt-15 mt-50 mb-200 display-12 lh-1 fw-bold">  </h2>
             <h3 class="pt-1 mt-1 mb-1 display-8 lh-1 fw-bold">Dew Point: <%=@current_weather.dew_point.to_i.round%></h3>
             <h2 class="pt-15 mt-50 mb-200 display-12 lh-1 fw-bold">  </h2>
